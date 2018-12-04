@@ -1,0 +1,14 @@
+* {
+    font-family: 'Comic Sans MS';
+}
+
+.webpage {
+    padding: 30px;
+}
+
+.header_font {
+    text-align: center;
+    font-size: 45px;
+    padding-left: 50px;
+    color: cyan;
+}
