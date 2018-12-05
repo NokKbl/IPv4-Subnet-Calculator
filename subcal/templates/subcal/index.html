@@ -9,7 +9,7 @@
                 <div class="row">
                     <h3 style="color:aliceblue;">Enter IP Address:</h3>
                     <div style="padding-left: 20px;">
-                        <input type="text" name="ip" placeholder="255.255.255.255" style="text-align:center; width:500px; height: 45px; font-size: 30px;">
+                        <input type="text" name="ip" placeholder="255.255.255.255" style="text-align:center; width:500px; height: 45px; font-size: 30px;" required>
                     </div>
                 </div>
                 <br><br>
@@ -18,7 +18,7 @@
                     <div class="col">
                         <div class="row">
                             <div style="padding-right: 40px; padding-left: 20px;">
-                                <input type="number" name="number" style="text-align:center; width: 300px; height: 45px; font-size: 30px;">
+                                <input type="number" name="number" style="text-align:center; width: 300px; height: 45px; font-size: 30px;" required>
                             </div>
                             <div class="form-check form-check-inline" style="font-size: 30px; padding-right: 20px;">
                                 <input class="form-check-input" type="radio" name="option" id="host" value="host"
@@ -49,13 +49,11 @@
                     <h4>IP Address:</h4>
                     <h4>IP Class:</h4>
                     <h4>Subnet Mask:</h4>
-                    <h4>Binary Subnet Mask:</h4>
                 </div>
                 <div class="col-7">
                     <h4>{{ ip_add }}</h4>
                     <h4>{{ ip_class }}</h4>
                     <h4>{{ mask }}</h4>
-                    <h4>{{ bi_mask }}</h4>
                 </div>
             </div>
         </div>
