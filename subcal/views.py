@@ -11,6 +11,7 @@ def IndexView(request):
         ip = request.POST.get('ip')
         all_ip = ip.split('.')
         number = request.POST.get('number')
+        number_chceked = request.POST.get('number')
         radio = request.POST.get('option')
         text_class = check_class(all_ip[0])
         number = int(number)
@@ -102,7 +103,8 @@ def IndexView(request):
         if text_class == "Class D" or text_class == "Class E":
             mask = "No mask"
             subresult = []
-
+        if int(number_chceked) <= 2 :
+            subresult = [first,second]
     context = {
         'subresult' : subresult,
         'ip_add' : ip_address_string,
@@ -310,7 +312,7 @@ def fix_subnet_id(array_new,number,text_class):
 def check_expo(number):
     for i in range(1, 32):
         total = pow(2, i)
-        if(total > number):
+        if(total >= number):
             return i
     return 0
 
