@@ -21,16 +21,16 @@ This Subnet Calculator using an IP Address and number of usable Hosts or Network
 
 1. Go to our site with https://subnet-cal.herokuapp.com/.
 
-  ![pic1](https://github.com/NokKbl/IPv4-Subnet-Calculator/blob/master/md_img/pic1.png)
+    ![pic1](https://github.com/NokKbl/IPv4-Subnet-Calculator/blob/master/md_img/pic1.png)
 
 2. Enter IP Address and number of hosts or networks.
 
-  ![pic2](https://github.com/NokKbl/IPv4-Subnet-Calculator/blob/master/md_img/pic2.png)
+    ![pic2](https://github.com/NokKbl/IPv4-Subnet-Calculator/blob/master/md_img/pic2.png)
 
 3. Press `Calculate!` button.
 
-  ![pic3](https://github.com/NokKbl/IPv4-Subnet-Calculator/blob/master/md_img/pic3.png)
+    ![pic3](https://github.com/NokKbl/IPv4-Subnet-Calculator/blob/master/md_img/pic3.png)
 
 4. See the result! (We shows only first 3 subnets and last subnet.)
 
-  ![pic4](https://github.com/NokKbl/IPv4-Subnet-Calculator/blob/master/md_img/pic4.png)
+    ![pic4](https://github.com/NokKbl/IPv4-Subnet-Calculator/blob/master/md_img/pic4.png)
