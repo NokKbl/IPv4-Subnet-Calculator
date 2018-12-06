@@ -5,7 +5,8 @@
 <div class="container">
     <div class="row">
         <div class="col">
-            <form>
+            <form action="{% url 'index' %}" method="POST">
+                {% csrf_token %}
                 <div class="row">
                     <h3 style="color:aliceblue;">Enter IP Address:</h3>
                     <div style="padding-left: 20px;">
@@ -72,11 +73,9 @@
         <tbody>
             {% for sub in subresult %}
             <tr>
-                <th scope="row">{{ sub.subnet }}</th>
-                <td>{{ sub.snid }}</td>
-                <td>{{ sub.first }}</td>
-                <td>{{ sub.last }}</td>
-                <td>{{ sub.broadcast }}</td>
+                {% for each_sub in sub %}
+                    <td>{{ each_sub }}</td>
+                {% endfor %}
             </tr>
             {% endfor %}
         </tbody>
