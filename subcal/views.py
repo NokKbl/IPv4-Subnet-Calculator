@@ -93,9 +93,10 @@ def IndexView(request):
         third = ["2",third_line,add_third,last_third,broadcast_third]
         fourth = [".",".",".",".","."]
         fifth = [".",".",".",".","."]
+        sixth = [".",".",".",".","."]
         last = [str(int(pow(2,number))-1),last_line,add_last,last_last,broadcast_last]
         
-        subresult = [first,second,third,fourth,fifth,last]
+        subresult = [first,second,third,fourth,fifth,sixth,last]
         
         ip_address_string = four_int_to_string(float_to_int(first_add(broad_cast(array_new))))
         mask =  four_int_to_string(float_to_int(first_add(broad_cast(subnet_mask))))
