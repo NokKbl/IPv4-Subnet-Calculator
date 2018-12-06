@@ -19,7 +19,7 @@
                     <div class="col">
                         <div class="row">
                             <div style="padding-right: 40px; padding-left: 20px;">
-                                <input type="number" name="number" style="text-align:center; width: 300px; height: 45px; font-size: 30px;" required>
+                                <input type="number" name="number" min="0" style="text-align:center; width: 300px; height: 45px; font-size: 30px;" required>
                             </div>
                             <div class="form-check form-check-inline" style="font-size: 30px; padding-right: 20px;">
                                 <input class="form-check-input" type="radio" name="option" id="host" value="host"
@@ -63,18 +63,18 @@
     <table class="table table-striped table-dark" style="opacity: 0.8;">
         <thead>
             <tr>
-                <th scope="col">Subnet</th>
-                <th scope="col">Subnet ID</th>
-                <th scope="col">First Add</th>
-                <th scope="col">Last Add</th>
-                <th scope="col">Broadcast</th>
+                <th class="text-center" scope="col">Subnet</th>
+                <th class="text-center" scope="col">Subnet ID</th>
+                <th class="text-center" scope="col">First Add</th>
+                <th class="text-center" scope="col">Last Add</th>
+                <th class="text-center" scope="col">Broadcast</th>
             </tr>
         </thead>
         <tbody>
             {% for sub in subresult %}
             <tr>
                 {% for each_sub in sub %}
-                    <td>{{ each_sub }}</td>
+                    <td class="text-center">{{ each_sub }}</td>
                 {% endfor %}
             </tr>
             {% endfor %}
