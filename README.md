@@ -14,7 +14,7 @@ This Subnet Calculator using an IP Address and number of usable Hosts or Network
 
 1. Django
 2. Visual Studio Code
-3. IntelliJ IDEA
+3. PyCharm CE
 
 
 ## How to use
